@@ -1,0 +1,113 @@
+/*formatado full page*/
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*centralizado o conteiner do formulario*/
+.form-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+
+/*criado gride */
+.formFormat{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*estilizado area de logo na hrizontal*/
+.logoInfo{
+  display: flex;
+  padding: 20px 30px;
+  background-color: #660066;
+  border-radius: 16px 0 0 16px;
+}
+.logoInfo img{
+  margin: auto 10px;
+}
+.logoInfo span{
+  width: 200px;
+  margin: auto;
+}
+.logoInfo span h1{
+  font-size: 40px;
+  margin: 0;
+  color: #fff;
+}
+.logoInfo span p{
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+}
+
+
+/*formatado os campos de formulario*/
+.formInfo{
+  margin: auto;
+  padding: 100px 30px;
+}
+.formInfo label{
+  color: #222222;
+  font-size: 20px;
+}
+.formInfo input{
+  width: 300px;
+  height: 20px;
+  border-radius: 6px;
+  outline: none;
+  border: solid 1px;
+}
+.formInfo input:focus{
+  border: 2px solid #660066;
+}
+
+.check-form #chk{
+  width: 20px;
+}
+.check-form label{
+  font-size: 20px;
+}
+
+/*estilizado o botão*/
+.formInfo button{
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 30px auto 0 0;
+  background-color: #4CAF50;
+  text-align: center;
+  color: #222222;
+  font-size: 20px;
+  transition: .6s;
+}
+.formInfo button:hover{
+  background-color: #47ba4b;
+}
+
+
+/*modo responsivo para celular*/
+@media(max-width:420px){
+  /*removido logo na horizontal*/
+  .logoInfo{
+    display: none;
+  }
+
+/*add logo no topo, e centralizado*/
+  .formInfo{
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 20px;
+    background-size: 70px;
+  }
+}
