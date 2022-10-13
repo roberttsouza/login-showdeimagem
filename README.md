@@ -4,7 +4,7 @@
  Pagina de login com redirecionamento para a pagina da <strong>show de imagem</strong>.
 </p>
 
-<p align="left"> 
+<p align="left">
  Para acessar é necessario inserir os aquivos em um servidor local.
   Para a criação do mesmo utilizado o xampp
 </p>
